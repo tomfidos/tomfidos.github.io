@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <form action="https://formspree.io/f/xrgvzqek" method="POST">
+        <label class="elem" for="firstName">Imię:</label>
+        <input class="elem" type="text" name="firstName" id="firstName" placeholder="Wpisz imię" required>
+        <label class="elem" for="lastName">Nazwisko:</label>
+        <input class="elem" type="text" name="lastName" id="lastName" placeholder="Wpisz nazwisko" required>
+        <label class="elem" for="email">Email:</label>
+        <input class="elem" type="email" name="email" id="email" placeholder="Wpisz email" required>
+        <label class="elem" for="phone">Telefon:</label>
+        <input class="elem" type="text" name="phone" id="phone" placeholder="Wpisz nr telefon">
+        <label class="elem" for="city">Miasto:</label>
+        <select class="elem" name="city" id="city">
+            <option value="city1">Kraków</option>
+            <option value="city2" selected>Warszawa</option>
+            <option value="city3">Gdańsk</option>
+        </select>
+        <label class="elem" for="men">Płeć:</label>
+        <input class="radio" type="radio" name="men" id="men">Mężczyzna
+        <input class="radio" type="radio" name="woman" id="woman">Kobieta
+        <label class="elem" for="rodo">Zgoda na dane osobowe:</label>
+        <input class="elem" type="checkbox" name="rodo" id="rodo" required>
+        <label class="elem" for="message">Dodatkowe uwagi:</label>
+        <textarea class="elem" name="message" id="message"></textarea>
+        <input class="elem" type="submit" value="Wyślij">
+    </form>
+</body>
+</html>
