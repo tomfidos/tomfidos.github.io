@@ -10,6 +10,7 @@ body {
 
 .header {
     background-color: red;
+    padding: 1%;
 }
 
 .left {
@@ -26,11 +27,16 @@ body {
 
 .footer {
     background-color: blueviolet;
+    padding: 1%;
 }
 
 @media (min-width: 992px) {
+    .common {
+        font-size: larger;
+    }
     .main {  
-        width: 992px;
+        width: 661px;
+        height: auto;
         display: flex;
         flex-direction: row;
         margin-top: 0px;
@@ -39,16 +45,27 @@ body {
 
 @media (min-width: 768px) and (max-width: 992px) {
     .main {
-        width: 768px;
+        width: 450px;
+        height: 550px;
         display: flex;
         flex-flow: row wrap-reverse;
     }
 }
 
 @media (max-width: 768px) {
+    .common {
+        font-size: smaller;
+    }
+    .center {
+        order: -1
+    }
     .main {
-        width: 500px;
+        width: 350px;
+        height: 400px;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+    .left, .center, .right {
+        flex: 1;
     }
 }
