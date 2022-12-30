@@ -1,0 +1,54 @@
+body {
+    display: table;
+}
+
+.common {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.header {
+    background-color: red;
+}
+
+.left {
+    background-color: green;
+}
+
+.center {
+    background-color: lightskyblue;
+}
+
+.right {
+    background-color: pink;
+}
+
+.footer {
+    background-color: blueviolet;
+}
+
+@media (min-width: 992px) {
+    .main {  
+        width: 992px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .main {
+        width: 768px;
+        display: flex;
+        flex-flow: row wrap-reverse;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 500px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
