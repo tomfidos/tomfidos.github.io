@@ -40,6 +40,7 @@ body {
         display: flex;
         flex-direction: row;
         margin-top: 0px;
+        justify-content: space-around;
     }
     .center {
         flex: 2;
@@ -52,9 +53,22 @@ body {
 @media (min-width: 768px) and (max-width: 992px) {
     .main {
         width: 450px;
-        height: 550px;
+        height: 400px;
         display: flex;
         flex-flow: row wrap-reverse;
+        justify-content: space-around;
+    }
+    .left {
+        flex-basis: 100%;
+        height: 50%;
+    }
+    .center {
+        flex-basis: 75%;
+        height: 50%;
+    }
+    .right {
+        flex-basis: 25%;
+        height: 50%;
     }
 }
 
