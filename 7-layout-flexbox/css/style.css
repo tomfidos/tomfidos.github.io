@@ -36,10 +36,16 @@ body {
     }
     .main {  
         width: 661px;
-        height: auto;
+        height: 250px;
         display: flex;
         flex-direction: row;
         margin-top: 0px;
+    }
+    .center {
+        flex: 2;
+    }
+    .left, .right {
+        flex: 1;
     }
 }
 
