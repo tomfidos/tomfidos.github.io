@@ -1,0 +1,40 @@
+#table {
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.uczen,
+.zajecia-dodatkowe {
+    width: 200px;
+}
+
+.matematyka,
+.polski,
+.biologia,
+.geografia,
+.fizyka,
+.chemia,
+.informatyka,
+.srednia {
+    width: 100px;
+    padding: 2px;
+    border-width: 2px;
+}
+
+.srednia {
+    padding-left: 1em;
+}
+
+.tytul,
+.uczen {
+    padding: 4px;
+}
