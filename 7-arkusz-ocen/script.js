@@ -22,7 +22,7 @@ function getList() {
         const element = student[i];
         if (element.id.includes('uczen')) {
             const average = getAverage(element);
-            element.querySelector('.srednia').innerText = average.toString();
+            element.querySelector('.srednia').innerText = average.toFixed(2).toString();
             gradeAndStudent.push({
                 'id': element.id,
                 'student': element.querySelector('.uczen').innerText,
