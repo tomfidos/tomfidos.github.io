@@ -1,0 +1,43 @@
+#table {
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+#tytul-pracownik,
+.pracownik {
+    width: 200px;
+}
+
+#tytul-czas,
+.czas {
+    width: 100px;
+}
+
+#tytul-stawka,
+.stawka {
+    width: 100px;
+}
+
+#tytul-wyplata,
+.wyplata {
+    width: 100px;
+}
+
+#tytul-czas,
+#tytul-stawka,
+#tytul-wyplata {
+    padding: 4px;
+}
+
+.wyplata {
+    padding-left: 1em;
+}
