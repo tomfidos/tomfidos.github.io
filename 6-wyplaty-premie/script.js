@@ -1,4 +1,5 @@
 const calculationButton = document.getElementById('oblicz');
+const salaryFields = document.querySelectorAll('.wyplata');
 
 const calculateSalariesAndBonuses = () => {
     const employees = document.querySelectorAll('div');
@@ -19,4 +20,30 @@ const calculateSalariesAndBonuses = () => {
     }
 }
 
+const getAndListTopPeformers = () => {
+    if (document.getElementById('najlepsi-pracownicy').innerText !== '') {
+        document.getElementById('najlepsi-pracownicy').innerText = '';
+    }
+    const employees = document.querySelectorAll('div');
+    const worktimeAndEmployees = [];
+    for (let i=0; i< employees.length; i++) {
+        const element = employees[i];
+        if (element.id.includes('pracownik')) {
+            worktimeAndEmployees.push({
+                'employee': element.querySelector('.pracownik').innerText,
+                'worktime': parseInt(element.querySelector('.czas').value),
+            });
+        }
+    }
+    worktimeAndEmployees.sort((x, y) => y.worktime - x.worktime);
+    const bestSpan = document.getElementById('najlepsi-pracownicy');
+    const bestList = worktimeAndEmployees.slice(0, 3).map(x => x.employee).join(', ');
+    if (bestSpan.innerText === '') {
+        bestSpan.innerText = bestList;
+    }
+}
+
 calculationButton.addEventListener('click', calculateSalariesAndBonuses);
+salaryFields.forEach(elem => {
+    elem.addEventListener('DOMSubtreeModified', getAndListTopPeformers)
+});
