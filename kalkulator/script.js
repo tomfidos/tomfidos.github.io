@@ -55,7 +55,8 @@ class Calculator {
   
     changeSign = (event) => {
       if (!this.pickedNumber) {
-        return;
+        const currentScreenText = parseFloat(document.getElementById('screen').innerText);
+        this.pickedNumber = currentScreenText;
       }
       document.getElementById('screen').innerText = '';
       this.changeCurrentResult();
