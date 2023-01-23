@@ -31,7 +31,8 @@ html, body {
     cursor: pointer;
   }
   
-  .sign {
+  .sign,
+  #dot {
     background-color: darkgray;
   }
   
