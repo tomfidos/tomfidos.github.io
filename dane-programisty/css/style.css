@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+}
+
+#button {
+    text-transform: uppercase;
+    margin: 1em;
+    padding: 1em;
+}
