@@ -10,59 +10,52 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div>
+
+    <div class="header">
         <p>faq</p>
         <hr>
     </div>
-    <div class="accordion" id="accordionExample">
+
+    <div class="accordion faqContainer" id="faqAccordion">
         
-        <div class="card">
-            <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Kim jest Front End Developer?
-                    </button>
-                </h2>
-            </div>
-      
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+        <div class="accordion-item item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#frontEndDev" aria-expanded="false" aria-controls="frontEndDev">
+                    Kim jest Front End Developer?
+                </button>
+            </h2>
+            <div id="frontEndDev" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium asperiores at atque quos? Ea, aspernatur? Repellendus autem suscipit animi asperiores sunt ratione quos delectus, officiis iste ipsum recusandae enim repellat!
                 </div>
             </div>
         </div>
 
-        <!-- <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Od czego zaczyna się nauka?
-                    </button>
-                </h2>
+        <div class="accordion-item item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#learningStart" aria-expanded="false" aria-controls="learningStart">
+                    Od czego zaczyna się nauka?
+                </button>
+            </h2>
+            <div id="learningStart" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium asperiores at atque quos? Ea, aspernatur? Repellendus autem suscipit animi asperiores sunt ratione quos delectus, officiis iste ipsum recusandae enim repellat!
+                </div>
             </div>
-
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              Some placeholder content for the second accordion panel. This panel is hidden by default.
-            </div>
-          </div>
         </div>
 
-        <div class="card">
-            <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Znam już podstawy; co dalej?
-                    </button>
-                </h2>
+        <div class="accordion-item item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nextSteps" aria-expanded="false" aria-controls="nextSteps">
+                    Znam już podstawy; co dalej?
+                </button>
+            </h2>
+            <div id="nextSteps" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium asperiores at atque quos? Ea, aspernatur? Repellendus autem suscipit animi asperiores sunt ratione quos delectus, officiis iste ipsum recusandae enim repellat!
+                </div>
             </div>
-
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-              And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-            </div>
-          </div>
-        </div> -->
+        </div>
 
     </div>
 
