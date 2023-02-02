@@ -19,9 +19,13 @@
             }
 
             .icon-about {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-content: center;
                 color: $color-text-primary;
-                width: $base-font-size * 4.5;
-                height: $base-font-size * 4.5;
+                width: $base-font-size * 6;
+                height: $base-font-size * 6;
                 border-radius: 100%;
                 line-height: $base-font-size * 4.5;
                 background-color: $color-primary;
@@ -139,7 +143,7 @@
                 background: $color-portfolio-hover;
                 -webkit-transition: all .35s;
                 -moz-transition: all .35s;
-                transition: all .35s;
+                transition: all 1s;
 
                 .portfolio-box-caption-content {
                     position: absolute;
@@ -177,6 +181,10 @@
             border-radius: 100%;
             line-height: $base-font-size * 4.5;
             border: 2px solid $color-primary;
+        }
+
+        .icon-services:hover {
+            @include rotate;
         }
 
 
