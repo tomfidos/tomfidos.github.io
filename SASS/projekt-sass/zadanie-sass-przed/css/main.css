@@ -11747,12 +11747,12 @@ form fieldset input[name=comment], form fieldset input[name=message] {
   border-radius: 100%;
   line-height: 72px;
   border: 2px solid #a5e200;
+  transition: 5s;
 }
 .t108-one-page #counters-services .icon-services:hover {
   -webkit-transform: rotateZ(-45deg);
   -ms-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
-  animation-duration: 0.5s;
 }
 .t108-one-page #counters-services .counters-box {
   margin: 0 auto 72px;
